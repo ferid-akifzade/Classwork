@@ -11,14 +11,20 @@ public class main {
         int[] array = new int[20];
         for (int i = 0; i < 20; i++) {
             array[i] = Math.abs(arrayElements.nextInt());
-            if(array[i] %2 == 0 && array[i] %3 == 0)
+            if(array[i] %2 == 0 && array[i] %3 == 0) {
                 arrayOfFizzAndBuzz[i] = "fizzbuzz";
-            if(array[i]%2 == 0)
+                continue;
+            }
+            if(array[i]%2 == 0) {
                 arrayOfFizzAndBuzz[i] = "fizz";
-            else if (array[i] %3 == 0)
+                continue;
+            }
+            else if (array[i] %3 == 0) {
                 arrayOfFizzAndBuzz[i] = "buzz";
-            else
-                arrayOfFizzAndBuzz[i] = "";
+                continue;
+            }
+            arrayOfFizzAndBuzz[i] = "";
+            continue;
         }
     }
 }
