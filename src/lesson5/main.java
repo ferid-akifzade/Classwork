@@ -19,7 +19,7 @@ public class main {
                 arrayOfFizzAndBuzz[i] = "fizz";
                 continue;
             }
-            else if (array[i] %3 == 0) {
+            if (array[i] %3 == 0) {
                 arrayOfFizzAndBuzz[i] = "buzz";
                 continue;
             }
