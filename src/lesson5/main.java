@@ -2,22 +2,21 @@ package lesson5;
 
 
 import java.util.Random;
-
+import java.lang.Math;
 public class main {
-    static String randomArray()
-    {
-        Random arrayElements = new Random(10);
-        int[] array = new int[20];
-        for (int value: array) {
-            if(value % 2 == 0)
-                return "fizz";
-            else if (value % 3 == 0)
-                return "buzz";
-        }
-        return null;
-    }
     public static void main(String[] args) {
 
-        System.out.println(randomArray());
+        Random arrayElements = new Random(10);
+        String[] arrayOfFizzAndBuzz = new String[20];
+        int[] array = new int[20];
+        for (int i = 0; i < 20; i++) {
+            array[i] = Math.abs(arrayElements.nextInt());
+            if(array[i]%2 == 0)
+                arrayOfFizzAndBuzz[i] = "fizz";
+            else if (array[i] %3 == 0)
+                arrayOfFizzAndBuzz[i] = "buzz";
+            else
+                arrayOfFizzAndBuzz[i] = "";
+        }
     }
 }
