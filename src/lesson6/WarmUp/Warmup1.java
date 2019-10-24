@@ -1,9 +1,9 @@
-package lesson6;
+package lesson6.WarmUp;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Warmup {
+public class Warmup1 {
     public static void main(String[] args) {
         ArrayList<Integer> firstNumberArray = new ArrayList<>();
         Random fillArray = new Random();
