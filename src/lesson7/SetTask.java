@@ -1,6 +1,6 @@
 package lesson7;
 import java.util.*;
-import java.util.function.Consumer;
+
 
 class StringGenerator{
     private Random sizeGenerator = new Random();
