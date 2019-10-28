@@ -36,7 +36,7 @@ class Task
             result.add(result1);
             return result;
         }
-        throw new NullPointerException("String in class cannot be null");
+        return new ArrayList<String>();
     }
     public Integer solve()
     {
