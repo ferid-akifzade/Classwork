@@ -1,4 +1,4 @@
-package lesson9;
+package lesson9.ReadWriteSortedStringList;
 
 import java.io.IOException;
 import java.nio.file.Files;
